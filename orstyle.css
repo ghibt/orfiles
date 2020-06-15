@@ -1,0 +1,2134 @@
+html,
+body {
+  height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.eui-help-back {
+  cursor: pointer;
+  display: block;
+}
+
+.eui-containerGlobal {
+  min-height: 100%;
+  position: relative;
+}
+
+.eui-container {
+  margin: 0 auto;
+  max-width: 128rem;
+}
+
+#error-link-lost {
+  display: inline;
+}
+
+.column {
+  min-height: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.eui-pub {
+  margin-bottom: 6rem;
+}
+
+.noSelectContent {
+  outline: 0;
+}
+
+#login,
+#password {
+  background-color: transparent;
+  position: relative;
+}
+
+.eui-block {
+  display: block;
+}
+
+#passwordContainer {
+  max-width: 42.5rem;
+  position: relative;
+}
+
+.off-screen {
+  bottom: 0;
+  filter: alpha(opacity=0);
+  height: 0 !important;
+  opacity: 0;
+  overflow: hidden;
+  position: fixed !important;
+  right: 0;
+  width: 0 !important;
+}
+
+footer {
+  display: block;
+  width: 100%;
+}
+
+.footer-fixed {
+  bottom: 0;
+  position: fixed;
+}
+
+.footer-fluid {
+  position: relative;
+}
+
+#o-header {
+  border-bottom: 0.1rem solid #ddd;
+}
+
+.eui-links a {
+  font-weight: 700;
+}
+
+.eui-footer-banner {
+  background-color: rgb(220, 220, 220);
+  display: block;
+  padding: 2rem 0;
+}
+
+.eui-mega-banner {
+  height: 9rem;
+  margin: 1rem auto 1rem auto;
+  width: 72.8rem;
+}
+
+.eui-reinitLostLink {
+  text-decoration: underline;
+}
+
+.eui-input-label {
+  display: table;
+}
+
+.eui-row {
+  display: table-row;
+}
+
+.eui-input-label label,
+.eui-input-label .eui-assistance-area,
+.eui-input-label .eui-label {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.eui-form input[type=text],
+.eui-form input[type=password] {
+  font-weight: 700;
+}
+
+/*
+Common defintions for svg icons.
+Prefix with this class any of .eui-icon-* (ex:  .eui-svg .eui-icon-next)
+*/
+
+.eui-svg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.eui-svg::before,
+.eui-svg-assist::before {
+  content: " ";
+}
+
+.input-control-visual {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.transparent-btn {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.eui-svg-assist {
+  background: center no-repeat;
+  background-size: contain;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.eui-icon-assist-show {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%201000%22%20width%3D%221000%22%20height%3D%221000%22%3E%3Cpath%20d%3D%22M513.081%20250.129c-4.017%200-8.041-.129-12.081-.129s-8.064.129-12.081.129C301.335%20250.129%20111.491%20382.343%2050%20500c61.491%20117.656%20249.335%20249.871%20436.919%20249.871%204.017%200%208.04.129%2012.081.129s8.064-.129%2012.081-.129C698.665%20749.871%20888.51%20617.656%20950%20500c-61.49-117.657-249.335-249.871-436.919-249.871zM498.62%20680a180%20180%200%201%201%20180-180%20180%20180%200%200%201-180%20180zm-378.2-179.963c29.782-41.595%2077.4-84.081%20132.916-117.816a545.263%20545.263%200%200%201%2055.918-29.695%20239.848%20239.848%200%200%200%20.78%20295.942%20537.117%20537.117%200%200%201-57.553-30.6c-55.012-33.642-102.328-76.134-132.064-117.834zm626.25%20117.747a544.106%20544.106%200%200%201-60.236%2031.655%20239.784%20239.784%200%200%200-.761-299.823%20536.07%20536.07%200%200%201%2061.852%2032.517c55.01%2033.642%20102.326%2076.136%20132.061%20117.836-29.786%2041.595-77.401%2084.076-132.919%20117.812zM597.931%20453.153a48.227%2048.227%200%201%201-62.472-56.6%20109.731%20109.731%200%201%200%2062.472%2056.6z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.eui-icon-assist-hide {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%201000%22%20width%3D%221000%22%20height%3D%221000%22%3E%3Cpath%20d%3D%22M809.208%20350.568l-43.17%2043.17c47.061%2031.481%2087.2%2069.038%20113.545%20105.978-29.782%2041.6-77.4%2084.079-132.916%20117.815a543.936%20543.936%200%200%201-60.236%2031.655%20240.332%20240.332%200%200%200%2042.215-218.056l-50.895%2050.895q.855%208.747.869%2017.722a179.994%20179.994%200%200%201-180%20180q-8.971%200-17.722-.869L416.177%20743.6a429.382%20429.382%200%200%200%2070.742%206.022c4.017%200%208.04.129%2012.081.129s8.064-.129%2012.081-.129C698.665%20749.621%20888.51%20617.406%20950%20499.75c-26.641-50.976-77.011-104.677-140.792-149.182zM120.417%20499.784C150.2%20458.19%20197.82%20415.7%20253.333%20381.968a545.253%20545.253%200%200%201%2055.918-29.694%20240.373%20240.373%200%200%200-38.318%20223.517l49.622-49.622a180.093%20180.093%200%200%201%20204.487-204.487l64.736-64.736a432.184%20432.184%200%200%200-76.7-7.066c-4.017%200-8.041-.13-12.081-.13s-8.064.13-12.081.13C301.335%20249.88%20111.491%20382.093%2050%20499.75c27.215%2052.073%2079.192%20106.99%20144.932%20152.043l43.24-43.241c-48.872-32.038-90.631-70.73-117.755-108.768zM823.218%20136l-318.76%20318.76-100.54%20100.54L133.25%20825.969%20186.281%20879l275.731-275.731L602.14%20463.141l274.11-274.11z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
+}
+
+/* svg original size: width: 1.3rem;  height: 2rem; */
+
+.eui-icon-next {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013%2020%22%20width%3D%2213%22%20height%3D%2220%22%3E%3Cpath%20d%3D%22M2.5%2019c-0.4%200-0.9-0.2-1.2-0.5%20-0.3-0.3-0.4-0.6-0.4-1%200-0.4%200.2-0.7%200.5-1l7-6.5%20-7-6.7C1.2%203.1%201%202.7%201%202.4c0-0.4%200.1-0.7%200.4-1%200.6-0.5%201.5-0.5%202.1%200l8%207.7c0.3%200.3%200.4%200.6%200.4%201%200%200.4-0.2%200.7-0.5%201l-8%207.5C3.2%2018.9%202.9%2019%202.5%2019L2.5%2019%202.5%2019z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+/* svg original size: width: 1.3rem;  height: 2rem; */
+
+.eui-icon-back {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013%2020%22%3E%3Cpath%20d%3D%22m10.3%201c0.4%200%200.9%200.2%201.2%200.5%200.3%200.3%200.4%200.6%200.4%201%200%200.4-0.2%200.7-0.5%201l-7%206.5%207%206.7c0.2%200.2%200.4%200.6%200.4%200.9%200%200.4-0.1%200.7-0.4%201-0.6%200.5-1.5%200.5-2.1%200l-8-7.7c-0.3-0.3-0.4-0.6-0.4-1%200-0.4%200.2-0.7%200.5-1l8-7.5c0.2-0.3%200.5-0.4%200.9-0.4v0z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+/* SVG original size: width: 1.7rem; height: 2.6rem; */
+
+.eui-icon-avatar {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2217%22%20height%3D%2226%22%20viewBox%3D%220%200%2017%2026%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%20%7B%20fill-rule%3A%20evenodd%3B%20%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M3.09%2026A3.073%203.073%200%200%201%200%2022.94v-6.42a6.866%206.866%200%200%201%203.63-5.89%207.164%207.164%200%200%200%209.74%200A6.857%206.857%200%200%201%2017%2016.67V26H3.09zM8.5%2011.01a5.505%205.505%200%201%201%205.56-5.5%205.53%205.53%200%200%201-5.56%205.5z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.eui-icon-avatar-grey {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2217%22%20height%3D%2226%22%20viewBox%3D%220%200%2017%2026%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%20%7B%20fill-rule%3A%20evenodd%3B%20fill%3A%20%23b1b1b1%3B%20%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M3.09%2026A3.073%203.073%200%200%201%200%2022.94v-6.42a6.866%206.866%200%200%201%203.63-5.89%207.164%207.164%200%200%200%209.74%200A6.857%206.857%200%200%201%2017%2016.67V26H3.09zM8.5%2011.01a5.505%205.505%200%201%201%205.56-5.5%205.53%205.53%200%200%201-5.56%205.5z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+/* SVG original size: width: 1.8rem; height: 1.8rem; */
+
+.eui-icon-close {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%20%7B%20fill-rule%3A%20evenodd%3B%20%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M17.36%2014.28a2.2%202.2%200%200%201%20.04%203.07%202.145%202.145%200%200%201-1.53.65%202.06%202.06%200%200%201-1.48-.62L9%2012.03l-5.39%205.35a2.06%202.06%200%200%201-1.48.62%202.13%202.13%200%200%201-1.53-.65%202.2%202.2%200%200%201%20.04-3.07L5.95%209%20.64%203.73A2.2%202.2%200%200%201%20.6.66%202.1%202.1%200%200%201%203.61.62L9%205.97%2014.39.62a2.1%202.1%200%200%201%203.01.04%202.2%202.2%200%200%201-.04%203.07L12.05%209z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.eui-icon-close-grey {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%20%7B%20fill-rule%3A%20evenodd%3B%20fill%20%3A%20%23b1b1b1%20%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M17.36%2014.28a2.2%202.2%200%200%201%20.04%203.07%202.145%202.145%200%200%201-1.53.65%202.06%202.06%200%200%201-1.48-.62L9%2012.03l-5.39%205.35a2.06%202.06%200%200%201-1.48.62%202.13%202.13%200%200%201-1.53-.65%202.2%202.2%200%200%201%20.04-3.07L5.95%209%20.64%203.73A2.2%202.2%200%200%201%20.6.66%202.1%202.1%200%200%201%203.61.62L9%205.97%2014.39.62a2.1%202.1%200%200%201%203.01.04%202.2%202.2%200%200%201-.04%203.07L12.05%209z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+/* SVG original size: width: 3rem; height: 3rem; */
+
+.eui-icon-help {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2031%2031%22%3E%3Cpath%20d%3D%22M15%200C6.7%200%200%206.7%200%2015s6.7%2015%2015%2015%2015-6.7%2015-15S23.3%200%2015%200zm1.1%2024c-.4.3-.8.5-1.3.5s-1-.2-1.3-.5c-.4-.3-.6-.8-.6-1.4%200-.5.2-1%20.6-1.3.4-.4.8-.5%201.4-.5.5%200%201%20.2%201.3.5.4.4.5.8.5%201.3%200%20.6-.2%201.1-.6%201.4zm4.7-11.6c-.3.5-.6%201-1%201.4-.4.4-1.1%201-2.1%202l-.7.7c-.2.2-.3.4-.4.5-.1.2-.1.3-.2.5%200%20.2-.1.5-.2.9-.2.9-.7%201.3-1.5%201.3-.4%200-.8-.1-1.1-.4-.3-.3-.4-.7-.4-1.3%200-.7.1-1.3.3-1.8.2-.5.5-1%20.9-1.4.4-.4.8-.9%201.5-1.4.5-.5.9-.8%201.2-1.1.2-.2.4-.5.6-.8.2-.3.2-.6.2-1%200-.7-.2-1.2-.7-1.7-.5-.5-1.1-.7-1.9-.7-.9%200-1.6.2-2%20.7-.4.5-.8%201.2-1.1%202.1-.3.9-.8%201.4-1.6%201.4-.5%200-.9-.2-1.2-.5-.3-.3-.5-.7-.5-1.1%200-.8.3-1.6.8-2.4.5-.8%201.3-1.5%202.2-2%201-.5%202.1-.8%203.4-.8%201.2%200%202.3.2%203.2.7.9.4%201.6%201.1%202.2%201.8.5.8.8%201.6.8%202.5-.3.7-.4%201.3-.7%201.9z%22%20fill%3D%22%23527edb%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.eui-icon-help:hover,
+.eui-icon-help:focus {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2031%2031%22%3E%3Cpath%20d%3D%22M15%200C6.7%200%200%206.7%200%2015s6.7%2015%2015%2015%2015-6.7%2015-15S23.3%200%2015%200zm1.1%2024c-.4.3-.8.5-1.3.5s-1-.2-1.3-.5c-.4-.3-.6-.8-.6-1.4%200-.5.2-1%20.6-1.3.4-.4.8-.5%201.4-.5.5%200%201%20.2%201.3.5.4.4.5.8.5%201.3%200%20.6-.2%201.1-.6%201.4zm4.7-11.6c-.3.5-.6%201-1%201.4-.4.4-1.1%201-2.1%202l-.7.7c-.2.2-.3.4-.4.5-.1.2-.1.3-.2.5%200%20.2-.1.5-.2.9-.2.9-.7%201.3-1.5%201.3-.4%200-.8-.1-1.1-.4-.3-.3-.4-.7-.4-1.3%200-.7.1-1.3.3-1.8.2-.5.5-1%20.9-1.4.4-.4.8-.9%201.5-1.4.5-.5.9-.8%201.2-1.1.2-.2.4-.5.6-.8.2-.3.2-.6.2-1%200-.7-.2-1.2-.7-1.7-.5-.5-1.1-.7-1.9-.7-.9%200-1.6.2-2%20.7-.4.5-.8%201.2-1.1%202.1-.3.9-.8%201.4-1.6%201.4-.5%200-.9-.2-1.2-.5-.3-.3-.5-.7-.5-1.1%200-.8.3-1.6.8-2.4.5-.8%201.3-1.5%202.2-2%201-.5%202.1-.8%203.4-.8%201.2%200%202.3.2%203.2.7.9.4%201.6%201.1%202.2%201.8.5.8.8%201.6.8%202.5-.3.7-.4%201.3-.7%201.9z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.eui-icon-help:active {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2031%2031%22%3E%3Cpath%20d%3D%22M15%200C6.7%200%200%206.7%200%2015s6.7%2015%2015%2015%2015-6.7%2015-15S23.3%200%2015%200zm1.1%2024c-.4.3-.8.5-1.3.5s-1-.2-1.3-.5c-.4-.3-.6-.8-.6-1.4%200-.5.2-1%20.6-1.3.4-.4.8-.5%201.4-.5.5%200%201%20.2%201.3.5.4.4.5.8.5%201.3%200%20.6-.2%201.1-.6%201.4zm4.7-11.6c-.3.5-.6%201-1%201.4-.4.4-1.1%201-2.1%202l-.7.7c-.2.2-.3.4-.4.5-.1.2-.1.3-.2.5%200%20.2-.1.5-.2.9-.2.9-.7%201.3-1.5%201.3-.4%200-.8-.1-1.1-.4-.3-.3-.4-.7-.4-1.3%200-.7.1-1.3.3-1.8.2-.5.5-1%20.9-1.4.4-.4.8-.9%201.5-1.4.5-.5.9-.8%201.2-1.1.2-.2.4-.5.6-.8.2-.3.2-.6.2-1%200-.7-.2-1.2-.7-1.7-.5-.5-1.1-.7-1.9-.7-.9%200-1.6.2-2%20.7-.4.5-.8%201.2-1.1%202.1-.3.9-.8%201.4-1.6%201.4-.5%200-.9-.2-1.2-.5-.3-.3-.5-.7-.5-1.1%200-.8.3-1.6.8-2.4.5-.8%201.3-1.5%202.2-2%201-.5%202.1-.8%203.4-.8%201.2%200%202.3.2%203.2.7.9.4%201.6%201.1%202.2%201.8.5.8.8%201.6.8%202.5-.3.7-.4%201.3-.7%201.9z%22%20fill%3D%22%23f16e00%22%2F%3E%3C%2Fsvg%3E");
+}
+
+/* SVG original size: width: 1.7rem;  height: 2.6rem; */
+
+.eui-icon-mc {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2017%2026%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%20.st0%7Bdisplay%3Anone%3B%7D%20.st1%7Bdisplay%3Ainline%3B%7D%20.st2%7Bdisplay%3Ainline%3Bfill%3A%235B5377%3B%7D%20.st3%7Bfill%3A%235B5377%3B%7D%20%3C%2Fstyle%3E%3Cg%20class%3D%22st0%22%3E%3Cpath%20class%3D%22st1%22%20d%3D%22M3.1%2026C1.4%2026%200%2024.6%200%2022.9c0%200%200%200%200%200v-6.4l0%200c0.1-2.5%201.4-4.7%203.6-5.9%202.7%202.5%207%202.5%209.7%200%202.2%201.2%203.6%203.5%203.6%206V26H3.1zM8.5%2011C5.5%2011%203%208.5%203%205.5S5.6%200%208.6%200c3%200%205.5%202.5%205.5%205.5C14%208.6%2011.6%2011%208.5%2011%208.5%2011%208.5%2011%208.5%2011z%22%2F%3E%3C%2Fg%3E%3Cg%20class%3D%22st0%22%3E%3Cpath%20class%3D%22st2%22%20d%3D%22M4.7%2010.2C4.3%209.5%204.2%208.8%204.2%208c0-2.3%201.5-4.2%203.4-4.2C9.4%203.7%2011%205.6%2011%208c0%200.8-0.2%201.6-0.5%202.2H14c0.2-0.7%200.3-1.5%200.3-2.2%200-1.9-0.6-3.7-1.7-5.1%20-1.3-1.6-3.1-2.5-5-2.5%20-1.9%200-3.7%200.9-5%202.5C1.4%204.3%200.8%206.1%200.8%208c0%200.8%200.1%201.5%200.3%202.2H4.7zM7.6%2017.5L9%2011.6h5.6c0.8%200%201.4%200.6%201.4%201.4v11.5c0%200.8-0.6%201.4-1.4%201.4h-2v-8.4l-1.9%208.4H4.4l-1.9-8.4v8.4h-2c-0.8%200-1.4-0.6-1.4-1.4V13c0-0.8%200.6-1.4%201.4-1.4h5.6L7.6%2017.5%207.6%2017.5z%22%2F%3E%3C%2Fg%3E%3Cpath%20class%3D%22st3%22%20d%3D%22M5.6%2010.1C5.3%209.5%205.1%208.7%205.1%207.9c0-2.3%201.5-4.2%203.4-4.2%201.9%200%203.4%201.9%203.4%204.2%200%200.8-0.2%201.6-0.5%202.2h3.5c0.2-0.7%200.3-1.4%200.3-2.2%200-1.9-0.6-3.7-1.7-5%20-1.3-1.6-3.1-2.5-5-2.5%20-1.9%200-3.7%200.9-5%202.5C2.4%204.2%201.8%206%201.8%207.9c0%200.8%200.1%201.5%200.3%202.2H5.6zM8.5%2017.4l1.5-5.9h5.5c0.8%200%201.4%200.6%201.4%201.4v11.4c0%200.8-0.6%201.4-1.4%201.4h-2v-8.4l-1.9%208.4H5.4l-1.9-8.4v8.4h-2c-0.8%200-1.4-0.6-1.4-1.4V12.9c0-0.8%200.6-1.4%201.4-1.4H7L8.5%2017.4%208.5%2017.4z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.eui-icon-warning {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2031%22%3E%3Cpath%20fill%3D%22%23cd3c14%22%20d%3D%22M14.103.005c-.01.007-.176.024-.37.038-.193.01-.39.03-.44.036l-.264.037c-.304.04-.84.124-.987.16-.078.017-.26.06-.405.09-1.99.44-4.15%201.455-5.758%202.71-1.275.992-2.318%202.08-3.21%203.362C1.686%207.85.915%209.52.478%2011.193c-.134.517-.303%201.37-.352%201.778-.02.173-.046.38-.056.458-.093.747-.093%202.405%200%203.14.157%201.29.337%202.1.7%203.2.302.908.795%202.007%201.218%202.714.078.134.155.265.17.286.108.186.415.65.615.933%201.807%202.536%204.417%204.49%207.336%205.49.764.26%201.986.56%202.672.652.1.014.208.028.247.035.034.007.172.025.298.035.127.015.28.032.335.04.268.038%202.282.034%202.694-.008.947-.095%201.388-.17%202.236-.377%203.797-.926%207.11-3.342%209.178-6.684%201.276-2.06%202.05-4.462%202.206-6.85.046-.718.025-2.18-.042-2.596-.007-.042-.04-.288-.07-.538-.29-2.247-1.233-4.628-2.596-6.558-.198-.282-.282-.39-.638-.838-.454-.567-1.24-1.374-1.863-1.91C22.827%201.932%2020.485.79%2017.96.28c-.194-.04-.416-.082-.49-.092-.074-.01-.17-.025-.21-.035-.044-.007-.153-.025-.25-.036-.096-.01-.24-.028-.318-.038-.078-.012-.205-.026-.282-.036-.19-.022-2.286-.057-2.307-.04zm1.5%205.2c.42.14.796.424%201.015.773.214.34.366.933.352%201.394-.003.233-.05%201.022-.067%201.215-.003.067-.02.265-.032.44-.024.332-.045.63-.073.987-.01.116-.025.33-.035.475-.042.612-.056.763-.07.915-.008.088-.025.278-.036.422-.035.476-.05.648-.084%201.057-.02.222-.046.532-.057.687-.01.156-.024.353-.035.44-.007.09-.024.255-.035.37-.01.117-.025.282-.035.37-.007.09-.025.286-.035.44-.01.156-.03.346-.036.423-.01.078-.025.236-.036.353-.045.5-.07.753-.123%201.197a38.735%2038.735%200%200%200-.055.493c-.036.32-.085.486-.19.627-.2.275-.472.398-.9.408-.467.012-.773-.125-.98-.435-.1-.145-.128-.233-.16-.493l-.056-.405c-.008-.05-.033-.28-.054-.51-.035-.403-.056-.61-.088-.846-.007-.06-.025-.232-.035-.387-.01-.155-.028-.345-.035-.422-.028-.256-.05-.524-.07-.81-.01-.154-.03-.33-.036-.387-.007-.06-.025-.264-.035-.458-.014-.193-.032-.39-.035-.44-.007-.05-.02-.232-.035-.405-.01-.176-.03-.366-.036-.422-.006-.06-.023-.25-.034-.423-.01-.176-.028-.387-.035-.475-.013-.148-.034-.43-.07-.88-.006-.107-.024-.32-.035-.476l-.07-.934c-.007-.126-.025-.348-.035-.493-.007-.144-.025-.398-.04-.563-.087-1.124.068-1.803.526-2.3.503-.542%201.313-.75%202.018-.518zm.018%2015.874c.66.225%201.18.802%201.315%201.454.077.384.03.87-.11%201.215-.2.478-.686.9-1.225%201.062-.317.095-.944.085-1.25-.02-.426-.15-.835-.455-1.04-.78-.327-.517-.37-1.358-.098-1.922.26-.54.778-.944%201.367-1.07.23-.053.82-.018%201.04.06z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.eui-icon-error {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Asodipodi%3D%22http%3A%2F%2Fsodipodi.sourceforge.net%2FDTD%2Fsodipodi-0.dtd%22%20xmlns%3Ainkscape%3D%22http%3A%2F%2Fwww.inkscape.org%2Fnamespaces%2Finkscape%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%20version%3D%221.1%22%20id%3D%22svg8%22%20inkscape%3Aversion%3D%220.92.1%20r15371%22%20sodipodi%3Adocname%3D%22drawing.svg%22%3E%3Cdefs%20id%3D%22defs2%22%2F%3E%3Csodipodi%3Anamedview%20id%3D%22base%22%20pagecolor%3D%22%23ffffff%22%20bordercolor%3D%22%23666666%22%20borderopacity%3D%221.0%22%20inkscape%3Apageopacity%3D%220.0%22%20inkscape%3Apageshadow%3D%222%22%20inkscape%3Azoom%3D%220.0%22%20inkscape%3Acx%3D%22120.83712%22%20inkscape%3Acy%3D%2261.271929%22%20inkscape%3Adocument-units%3D%22mm%22%20inkscape%3Acurrent-layer%3D%22layer1%22%20showgrid%3D%22false%22%20inkscape%3Awindow-width%3D%221280%22%20inkscape%3Awindow-height%3D%221002%22%20inkscape%3Awindow-x%3D%221912%22%20inkscape%3Awindow-y%3D%22-8%22%20inkscape%3Awindow-maximized%3D%221%22%2F%3E%3Cmetadata%20id%3D%22metadata5%22%3E%3Crdf%3ARDF%3E%3Ccc%3AWork%20rdf%3Aabout%3D%22%22%3E%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%3Cdc%3Atype%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%2F%3E%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%3C%2Fcc%3AWork%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cg%20inkscape%3Alabel%3D%22Layer%201%22%20inkscape%3Agroupmode%3D%22layer%22%20id%3D%22layer1%22%20transform%3D%22translate%280%2C-267%29%22%3E%3Cg%20id%3D%22layer1-9%22%20transform%3D%22matrix%280.9760542%2C0%2C0%2C0.984616%2C-66.163555%2C229.52011%29%22%3E%3Cellipse%20id%3D%22path3693%22%20cx%3D%2283.154762%22%20cy%3D%2253.299858%22%20rx%3D%2215.367999%22%20ry%3D%2215.234365%22%20style%3D%22fill%3A%23cd3c14%3Bfill-opacity%3A1%3Bstroke-width%3A0.26458332%22%2F%3E%3Cg%20id%3D%22g4521%22%20transform%3D%22translate%281.1575523%2C-0.25984791%29%22%20style%3D%22fill%3A%23ffffff%3Bstroke%3A%23ffffff%3Bstroke-opacity%3A1%22%3E%3Cpath%20id%3D%22path3695%22%20d%3D%22m%2077.910342%2C57.646574%208.173736%2C-8.173733%22%20style%3D%22fill%3A%23ffffff%3Bstroke%3A%23ffffff%3Bstroke-width%3A3.0999999%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A4%3Bstroke-dasharray%3Anone%3Bstroke-opacity%3A1%22%20inkscape%3Aconnector-curvature%3D%220%22%20%2F%3E%3Cpath%20id%3D%22path3695-8%22%20d%3D%22M%2086.084077%2C57.646574%2077.910344%2C49.472838%22%20style%3D%22fill%3A%23ffffff%3Bstroke%3A%23ffffff%3Bstroke-width%3A3.10000014%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A4%3Bstroke-dasharray%3Anone%3Bstroke-opacity%3A1%22%20inkscape%3Aconnector-curvature%3D%220%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+.eui-preloader {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.0%22%20width%3D%2220px%22%20height%3D%225px%22%20viewBox%3D%220%200%20128%2032%22%20xml%3Aspace%3D%22preserve%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23EEEEEE%22%20%2F%3E%3Ccircle%20fill%3D%22%23f16c00%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2211%22%20transform%3D%22translate%2816%2016%29%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22scale%22%20additive%3D%22sum%22%20values%3D%221%3B1.42%3B1%3B1%3B1%3B1%3B1%3B1%3B1%3B1%22%20dur%3D%22900ms%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3Ccircle%20fill%3D%22%23f16c00%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2211%22%20transform%3D%22translate%2864%2016%29%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22scale%22%20additive%3D%22sum%22%20values%3D%221%3B1%3B1%3B1%3B1.42%3B1%3B1%3B1%3B1%3B1%22%20dur%3D%22900ms%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3Ccircle%20fill%3D%22%23f16c00%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2211%22%20transform%3D%22translate%28112%2016%29%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22scale%22%20additive%3D%22sum%22%20values%3D%221%3B1%3B1%3B1%3B1%3B1%3B1%3B1.42%3B1%3B1%22%20dur%3D%22900ms%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E");
+  display: inline-block;
+  height: 5px;
+  margin-left: 5px;
+  width: 20px;
+}
+
+.mc-msg-desktop {
+  display: block;
+}
+
+.mc-msg-mobile {
+  display: none;
+}
+
+.mc-confirm-pad {
+  padding-top: 1rem;
+}
+
+.eui-identity-area {
+  display: table;
+  margin-top: 1.5rem;
+}
+
+.eui-identity-area .eui-avatar {
+  background-color: #eee;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.eui-identity-area .eui-mc-avatar .eui-user-pic {
+  border: 0.4rem solid #fff;
+  margin: 0 auto;
+}
+
+.eui-identity-area .eui-identity {
+  display: table-cell;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.eui-identity-area .eui-identity p {
+  margin: 0;
+  padding: 0;
+}
+
+.eui-identity-area .eui-mc-notice {
+  display: table;
+}
+
+.eui-identity-area .eui-mc-lock,
+.eui-identity-area .eui-mc-msg {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.eui-identity-area .eui-mc-msg {
+  padding: 0 0 0 1rem;
+}
+
+.eui-identity-area .eui-mc-msg p:first-child {
+  margin-bottom: 0.5rem;
+}
+
+/**
+ * Warning technical error
+ */
+
+.eui-error-area {
+  display: block;
+}
+
+.eui-error-area .zone-icon {
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.eui-error-area .zone-msg {
+  color: #cd3c14;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.eui-error-area .zone-msg-btm {
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.eui-error-area p {
+  font-weight: 700;
+  margin: 0;
+}
+
+.eui-empty-login {
+  height: 3.4rem;
+}
+
+/*
+ * end warning
+ */
+
+.eui-account-login {
+  height: 3.4rem;
+}
+
+.eui-account-group {
+  margin: 0 0 4.5rem 0;
+  padding: 0;
+}
+
+.eui-account-group .eui-links {
+  margin: 20px 0 0 0;
+}
+
+.eui-account-line {
+  background-color: #eee;
+  cursor: pointer;
+  display: block;
+  margin: 0 0 1rem 0;
+}
+
+.eui-account-line > div {
+  display: block;
+  float: left;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.eui-account-icon {
+  width: 4.7rem;
+}
+
+/* line-height is = the height of the div.eui-account-line block
+to pistition the element vertically
+ */
+
+.eui-account-icon > .eui-svg {
+  margin: auto;
+  width: 17px;
+}
+
+/* To truncate automaticly the text in the eui-account-login block the size must have fixed size
+which is: div.eui-account-line.width -  div.eui-account-icon.width - div.eui-account-action.width
+of 42.5rem */
+
+.eui-ellipsis {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis; /* required for IE8, allegedly */
+  text-overflow: ellipsis;
+
+  /* required for Opera */
+  white-space: nowrap;
+}
+
+/* line-height is = the height of the div.eui-account-line block
+to pistition the element vertically
+ */
+
+.eui-account-login span {
+  font-weight: bold;
+}
+
+.eui-account-action {
+  width: 3.2rem;
+}
+
+/* line-height is = the height of the div.eui-account-line block
+to pistition the element vertically
+ */
+
+.eui-account-action > .eui-svg {
+  margin: auto;
+  width: 13px;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-group.has-error .form-control-message {
+  line-height: 1.4rem;
+  margin-bottom: 0.6rem;
+  padding: 0;
+}
+
+.form-group.has-error .form-control-message a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: underline;
+}
+
+/*
+!Important: switch from '.has-error' to '.had-error' on 'input.form-control' focus event
+and set the
+Once, the error shown we keep empty space of the error message box
+without displaing the message
+*/
+
+.eui-mc .form-group.had-error .form-control-message {
+  display: none;
+}
+
+.form-group.had-error .form-control-message {
+  visibility: hidden;
+}
+
+.form-group.had-error .form-control {
+  border-color: #ccc;
+}
+
+.form-group.had-error .form-control:focus {
+  border-color: #999;
+}
+
+/*
+the checkbox border color
+*/
+
+.eui-checkbox {
+  height: 2rem;
+}
+
+.eui-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.o-checkbox[type="checkbox"]:not(:checked) + label,
+.o-checkbox[type="checkbox"]:checked + label,
+.o-checkbox[type="checkbox"]:checked:focus + label,
+.o-checkbox[type="checkbox"]:focus:not(:checked) + label {
+  border: 0;
+  height: 2rem;
+  margin: 0;
+}
+
+.o-checkbox[type="checkbox"]:not(:checked) + label::before {
+  border-color: #000;
+}
+
+.o-checkbox[type="checkbox"]:checked + label::before {
+  border-color: #f16e00;
+}
+
+.o-checkbox[type="checkbox"]:checked:focus + label {
+  border: 1px dotted;
+  height: 2.2rem;
+}
+
+.eui-label-content {
+  display: inline-block;
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled],
+.btn-info[disabled]:hover {
+  cursor: auto;
+}
+
+#btnAction.btn-primary {
+  background-color: #5b5377;
+  border-color: #5b5377;
+  height: 4rem;
+  padding: 0.8rem 2.4rem 0.8rem 2.4rem;
+}
+
+#btnAction.btn-info {
+  height: 4rem;
+  padding: 0.8rem 2.4rem 0.8rem 2.4rem;
+}
+
+.eui-assistance-area button {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.eui-help {
+  background-color: #eee;
+  margin-bottom: 1rem;
+  padding: 1rem 4.8rem 1rem 1rem;
+  position: relative;
+  text-align: justify;
+  width: 42.5rem;
+}
+
+.eui-help .eui-close {
+  background-color: inherit;
+  border: none;
+  display: inline-block;
+  height: 1.8rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 1.8rem;
+}
+
+.mc-action-area .eui-btn-sub {
+  background-color: #5b5377;
+  border-color: #5b5377;
+  padding: 0.8rem 2.1rem 0.8rem 2rem;
+}
+
+.mc-action-area .eui-btn-sub:hover {
+  background-color: #5b5377;
+  border-color: #5b5377;
+}
+
+.eui-help .eui-close:focus {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%20%7B%20fill-rule%3A%20evenodd%3B%20%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M17.36%2014.28a2.2%202.2%200%200%201%20.04%203.07%202.145%202.145%200%200%201-1.53.65%202.06%202.06%200%200%201-1.48-.62L9%2012.03l-5.39%205.35a2.06%202.06%200%200%201-1.48.62%202.13%202.13%200%200%201-1.53-.65%202.2%202.2%200%200%201%20.04-3.07L5.95%209%20.64%203.73A2.2%202.2%200%200%201%20.6.66%202.1%202.1%200%200%201%203.61.62L9%205.97%2014.39.62a2.1%202.1%200%200%201%203.01.04%202.2%202.2%200%200%201-.04%203.07L12.05%209z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.eui-clear {
+  clear: both;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
+#changeAccountDiv {
+  bottom: 0;
+  display: none;
+}
+
+.eui-help-container .o-accordion .panel-default:first-child .panel-heading,
+.eui-container .o-accordion .panel-default {
+  border: none;
+}
+
+.eui-help-container .panel-collapse {
+  outline: none;
+}
+
+.eui-help-container .panel-group {
+  margin-bottom: 1rem;
+}
+
+.eui-help-container .o-accordion .eui-account-line {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.eui-help-container h2 {
+  font-size: 2.4rem;
+}
+
+.eui-help-container .eui-img-link {
+  margin-top: 2rem;
+}
+
+.eui-help-container .panel-body p.eui-help-text {
+  margin: 0;
+}
+
+.eui-help-container .panel-body a {
+  text-decoration: underline;
+}
+
+.eui-assistance {
+  border: 1px solid #000;
+  margin-top: 25px;
+  padding: 25px 40px 40px 40px;
+}
+
+.eui-assistance p {
+  font-size: 1.6rem;
+}
+
+/**
+ * Escorteur Step 3
+ */
+
+.eui-btn-img {
+  background-color: inherit;
+  border: none;
+}
+
+.mc-st3 .eui-identity-area .eui-mc-avatar {
+  border: 0;
+}
+
+.mc-st3 .eui-identity-area .eui-mc-msg {
+  padding: 0;
+}
+
+.mc-st3 .mc-identity {
+  display: table;
+  margin-bottom: 1rem;
+}
+
+.mc-st3 .mc-identity > div {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.mc-code-invite {
+  display: table;
+  margin-top: 4.3rem;
+}
+
+.mc-code-invite .mc-code-logo {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.mc-code-invite .mc-logo-code {
+  height: 7.2rem;
+  margin-right: 0.9rem;
+  width: 8rem;
+}
+
+.mc-code-invite p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+  margin: 0;
+}
+
+.mc-st3 .eui-form {
+  overflow: visible;
+}
+
+.mc-st3 .eui-identity-area {
+  display: table;
+}
+
+.eui-identity-area p {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.x-col-avatar,
+.x-col-identity {
+  display: table-cell;
+}
+
+.x-col-avatar {
+  vertical-align: top;
+}
+
+.x-col-identity {
+  position: relative;
+  vertical-align: top;
+}
+
+.x-identity {
+  display: table;
+  padding-bottom: 0.3rem;
+}
+
+.x-identity > div {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.mc-st3 .eui-mc-lock {
+  float: left;
+}
+
+a.mc-back:hover {
+  color: #000;
+}
+
+.mc-back {
+  cursor: pointer;
+  display: table;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mc-back > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mc-back .eui-svg {
+  height: 2rem;
+  width: 1.4rem;
+}
+
+.mc-back p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+}
+
+.mc-error-area {
+  display: block;
+}
+
+.mc-error-area .zone-icon {
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.mc-error-area .zone-icon img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.mc-error-area .zone-msg {
+  color: #000;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mc-error-area .zone-msg-btm {
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.mc-error-area .zone-msg-btm p {
+  font-weight: normal;
+}
+
+.mc-error-area p {
+  font-weight: 700;
+  margin: 0;
+}
+
+#authWithoutMCDiv a {
+  white-space: nowrap;
+}
+
+#authWithoutMCDiv.disabled a {
+  color: #666;
+}
+
+.eui-links-mcAuth {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  left: 1.5rem;
+  letter-spacing: -0.03rem;
+  line-height: 1.8rem;
+  margin-top: 2rem;
+  position: relative;
+  vertical-align: middle;
+}
+
+.eui-mc-container-btn {
+  width: auto;
+}
+
+#assist-btn,
+.assist-area {
+  height: 3rem;
+  width: 3rem;
+}
+
+#changeAccountLink {
+  text-decoration: underline;
+}
+
+#btnSubmit,
+#btnAction {
+  height: 5rem !important;
+}
+
+.promoteMC-container {
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+}
+
+/*
+    CNIL
+ */
+
+.cn-container {
+  padding-bottom: 5rem;
+  padding-top: 4rem;
+}
+
+.cn-container .btn {
+  padding: 0.8rem 2rem;
+}
+
+.btnOptional {
+  margin-left: 1rem;
+}
+
+.cn-btn1,
+.cn-btn2 {
+  padding: 0;
+}
+
+.cn-btn-container {
+  padding-top: 2rem;
+}
+
+.mainCadenas {
+  height: 12.4rem;
+  width: 16rem;
+}
+
+.cn-titre {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.cn-msg {
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
+.pm-btn2 {
+  margin-top: 1rem;
+}
+
+.eui-pm {
+  padding-bottom: 1rem;
+}
+
+.eui-pm > h1 {
+  padding-left: 1rem;
+}
+
+#linkActivateBloc {
+  padding-left: 1rem;
+}
+
+.o-link-arrow.back::before {
+  color: #000;
+  content: "\e903";
+  font-family: "boosted";
+  font-size: 1rem;
+  padding: 0 1rem 0 0;
+}
+
+.o-link-arrow.back::after {
+  content: "";
+  padding: 0;
+}
+
+#sendAuthToken {
+  margin-left: 1.875rem;
+}
+
+/*
+    1rem = 10px @see: html.font-size
+*/
+
+/*
+(col-xs-*) Extra Small
+*/
+
+@media (max-width: 767px) {
+  .cn-btn-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .mainCadenas {
+    margin-left: 5rem;
+  }
+
+  .cn-btn2 {
+    order: 1;
+  }
+
+  .cn-btn1 {
+    margin-top: 1rem;
+    order: 2;
+  }
+
+  .cn-container {
+    max-width: 30.2rem;
+  }
+
+  .eui-pm {
+    padding-bottom: 1rem;
+  }
+
+  .btnOptional {
+    margin-left: 0;
+  }
+
+  #passwordContainer {
+    max-width: 30.2rem !important;
+  }
+
+  .errorForgotLinkMC {
+    margin-bottom: -4rem;
+  }
+
+  #btnSubmit,
+  #btnAction {
+    height: 4rem !important;
+  }
+
+  .eui-title-area {
+    border-bottom: 0.1rem solid #ddd;
+  }
+
+  .eui-title-area h1 {
+    line-height: 2rem;
+    margin: 0;
+    padding: 1.4rem 0;
+  }
+
+  .eui-btn-sub {
+    margin-top: 1.6rem;
+  }
+
+  .eui-st2 .eui-btn-sub {
+    margin-top: 2rem;
+  }
+
+  .eui-auth-btn {
+    margin-top: 2.7rem !important;
+  }
+
+  .form-group.has-error .form-control-message {
+    max-width: 30.2rem;
+  }
+
+  #login {
+    padding: 0.8rem 0.7rem;
+  }
+
+  .eui-input-label {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    /* height: 2.2em; */
+    width: 30.2rem;
+  }
+
+  .eui-input-label .eui-icon-help {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .eui-input-label label,
+  .eui-input-label .eui-label {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .eui-help {
+    width: 30.2rem;
+  }
+
+  .eui-form input[type=text],
+  .eui-form input[type=password],
+  .eui-form .eui-account-line,
+  .eui-identity-area {
+    height: 4rem;
+    width: 30.2rem;
+  }
+
+  .pass-assist {
+    padding-right: 4.2rem;
+  }
+
+  .assist-area {
+    margin: 0.5rem 1.2rem 0.5rem 0;
+  }
+
+  .eui-error-area {
+    margin: 1rem 0 0 0;
+    width: 30.2rem;
+  }
+
+  .eui-identity-area {
+    display: inline-block;
+    height: 6.8rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .eui-identity-area .eui-avatar {
+    border-radius: 50%;
+    height: 6.8rem;
+    width: 6.8rem;
+  }
+
+  .eui-identity-area .eui-avatar .eui-svg {
+    height: 5rem;
+    margin: 0 auto;
+    width: 3.4rem;
+  }
+
+  .eui-identity-area .eui-avatar .eui-user-pic {
+    border-radius: 50%;
+    height: 6.8rem;
+    width: 6.8rem;
+  }
+
+  .eui-identity-area .eui-mc-avatar .eui-user-pic {
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .eui-identity-area .eui-mc-notice {
+    margin-top: 0.5rem;
+  }
+
+  .eui-identity-area .eui-mc-lock .eui-svg {
+    height: 2.3rem;
+    margin-bottom: -0.1rem;
+    margin-right: 0.5rem;
+    width: 1.4rem;
+  }
+
+  /*
+     * width must be fixed for truncating the login (content of .eui-identity-area) with ellipsis
+     */
+  .eui-identity-area .eui-id-login {
+    width: 22.4rem;
+  }
+
+  /* same height  as .eui-avatar for aligning the following text on the same line */
+  .eui-identity-area .eui-identity > p {
+    line-height: 6.8rem;
+  }
+
+  /**
+  * Technical error warning
+  */
+
+  /* same margin-top as for password stage */
+  .eui-error-area .zone-icon {
+    height: 6.1rem;
+    width: 6.8rem;
+  }
+
+  .eui-error-area .zone-icon .eui-svg {
+    height: 3.5rem;
+    margin: auto;
+    width: 3.5rem;
+  }
+
+  .eui-error-area .zone-msg {
+    padding: 0 0 0 1rem;
+  }
+
+  .eui-error-area .zone-msg-btm {
+    margin-top: 2.7rem;
+  }
+
+  .eui-error-area p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .eui-empty-login {
+    height: 3rem;
+  }
+
+  /**
+  * End Technical error warning
+  */
+  .eui-account-login {
+    height: 3.4rem;
+    width: 22.2rem;
+  }
+
+  .eui-account-login span {
+    font-size: 1.6rem;
+    line-height: 4rem;
+  }
+
+  .eui-account-icon > .eui-svg,
+  .eui-account-action > .eui-svg {
+    height: 4rem;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .eui-checkbox {
+    margin-top: 1.8rem;
+  }
+
+  .eui-mc .eui-checkbox {
+    display: block;
+    margin-top: 2.2rem;
+  }
+
+  .eui-label-content {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-top: 0.6rem;
+  }
+
+  .eui-banner-place {
+    margin-bottom: 3rem;
+  }
+
+  .eui-banner,
+  .eui-banner-mc {
+    background-size: 100%;
+    height: 15rem;
+    width: 30.2rem;
+  }
+
+  .eui-banner-mc {
+    display: none;
+  }
+
+  #magicZone {
+    height: 15rem;
+    padding: 0;
+    width: 30.2rem;
+  }
+
+  .mc-msg-desktop {
+    display: none;
+  }
+
+  .mc-msg-mobile {
+    display: block;
+  }
+
+  .eui-links {
+    margin-bottom: 3.8rem;
+    margin-top: 0.4rem;
+  }
+
+  .eui-st2 .eui-links,
+  .eui-mc .eui-links,
+  .cn-container .eui-links {
+    margin-top: 3.4rem;
+  }
+
+  .cn-container .eui-links {
+    padding-left: 1rem;
+  }
+
+  .eui-st2 .eui-links,
+  .eui-mc .eui-links,
+  .promoteMC-container .eui-links {
+    margin-top: 3.4rem;
+  }
+
+  .promoteMC-container .eui-links {
+    padding-left: 1rem;
+  }
+
+  .eui-links a {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  .eui-links-passwd {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    left: 1.5rem;
+    letter-spacing: -0.03rem;
+    line-height: 1.8rem;
+    line-height: 4rem;
+    margin-top: 2rem;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  .eui-links-error-action {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: -0.03rem;
+    line-height: 1.8rem;
+    margin-top: 2rem;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  .eui-links div {
+    margin-top: 0.6rem;
+  }
+
+  .eui-assistance-area .eui-svg {
+    margin-right: 0.9rem;
+  }
+
+  .eui-st2 .eui-form .eui-input-label {
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  .eui-half-width {
+    max-width: 50%;
+    min-width: 50%;
+    width: 50%;
+  }
+
+  .eui-mc .eui-links {
+    margin-bottom: 3.5rem;
+    margin-top: 3.1rem;
+  }
+
+  .eui-mc .eui-links div {
+    margin-top: 0.5rem;
+  }
+
+  .mc-st3 .eui-identity-area .eui-id-login {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin-bottom: -0.2rem;
+    width: auto;
+  }
+
+  .eui-mc-msg p {
+    font-size: 1.3rem;
+    line-height: 1rem;
+  }
+
+  .mc-st3 .eui-mc-msg p {
+    display: block;
+  }
+
+  .mc-code-invite {
+    margin-top: 1.7rem;
+  }
+
+  .mc-code-invite .mc-logo-code {
+    height: 6.1rem;
+    margin-right: 1rem;
+    width: 6.8rem;
+  }
+
+  .mc-code-invite * {
+    font-size: 1.6rem;
+  }
+
+  .mc-code-invite p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+
+  .eui-mc .eui-form {
+    width: 30.2rem;
+  }
+
+  .mc-back {
+    display: none;
+  }
+
+  .mc-back-head {
+    float: left;
+  }
+
+  .mc-back-head a {
+    cursor: pointer;
+    display: block;
+    height: 4.8rem;
+    padding-top: 1.4rem;
+    width: 2.1rem;
+  }
+
+  .mc-back-head .eui-svg {
+    height: 2.2rem;
+    margin-left: -0.2rem;
+    width: 1.6rem;
+  }
+
+  .x-col-avatar {
+    width: 6.8rem;
+  }
+
+  .x-col-identity {
+    padding-left: 1rem;
+  }
+
+  .mc-st3 .eui-identity-area {
+    margin-top: 1.4rem;
+  }
+
+  .mc-st3 .eui-mc-lock .eui-svg,
+  .eui-mc .eui-mc-lock .eui-svg {
+    height: 2.3rem;
+    margin-bottom: -0.1rem;
+    margin-right: 0.5rem;
+    width: 1.4rem;
+  }
+
+  .x-notice span.x-phone {
+    display: block;
+    line-height: 1rem;
+  }
+
+  .x-identity .x-dsn {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    margin-bottom: -0.3rem;
+    width: 20.4rem;
+  }
+
+  /**
+   * .eui-dsn is an extension of .x-dsn
+   * No margin for IDME component!
+   */
+  .x-identity .eui-dsn {
+    margin: 0 !important;
+  }
+
+  .eui-identity-area .x-login {
+    font-size: 1.4rem;
+    height: 2rem;
+    line-height: 1.6rem;
+    margin: 0.5rem auto 0.5rem auto;
+    width: 22.4rem;
+  }
+
+  .eui-identity-area .x-notice {
+    font-size: 1.3rem;
+    height: 2.8rem;
+    margin-bottom: -0.1rem;
+    margin-top: -0.2rem;
+  }
+
+  .mc-st3 .eui-links {
+    margin-bottom: 3.5rem;
+    margin-top: 3.5rem;
+  }
+
+  .mc-st3 .eui-links div {
+    margin-top: 0.7rem;
+  }
+
+  .mc-st3 .eui-links div:last-child {
+    margin-top: 2.9rem;
+  }
+
+  .mc-error-area {
+    margin-top: 1.7rem;
+  }
+
+  .mc-error-area .zone-msg {
+    padding: 0 0 0 1rem;
+  }
+
+  .mc-error-area .zone-msg-btm {
+    margin-top: 2.5rem;
+  }
+
+  .mc-error-area p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .mc-error-area .eui-btn-sub {
+    margin-bottom: 0.4rem;
+    margin-top: 1.7rem;
+  }
+
+  /* overload .mc-error-area settings */
+  .mc-blocked .zone-msg-btm {
+    margin-top: 1.5rem;
+  }
+
+  .mc-blocked .eui-btn-sub {
+    margin-top: 2.7rem;
+  }
+
+  .mc-blocked .eui-links-passwd {
+    line-height: 1.8rem;
+    text-align: center;
+  }
+
+  .eui-links-mcAuth {
+    display: none;
+  }
+
+  .eui-pm > h1 {
+    padding-left: 0.5rem;
+  }
+
+  #linkActivate {
+    font-size: 1.6rem;
+  }
+
+  #linkActivateBloc {
+    padding-left: 0.5rem;
+  }
+}
+
+/*
+(col-md-*)  Medium
+*/
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    padding: 1.2rem 2.8rem 1.4rem 2.8rem;
+  }
+
+  .mc-action-area .eui-btn-sub {
+    padding: 0.8rem 2rem;
+  }
+
+  .eui-btn-sub,
+  .eui-st2 .eui-btn-sub {
+    margin-top: 2rem;
+  }
+
+  .eui-auth-btn {
+    margin-top: 4rem !important;
+  }
+
+  .eui-mc .eui-btn-sub {
+    margin-bottom: 0;
+  }
+
+  .eui-title-area h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0;
+    padding: 3rem 0;
+  }
+
+  .form-group.has-error .form-control-message {
+    max-width: 35.2rem;
+  }
+
+  .eui-input-label {
+    height: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 35.2rem;
+  }
+
+  .eui-input-label .eui-icon-help {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .eui-assistance-area .eui-svg {
+    margin-right: 0.4rem;
+  }
+
+  .eui-input-label label,
+  .eui-input-label .eui-label {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .eui-help {
+    width: 35.2rem;
+  }
+
+  .eui-form input[type=text],
+  .eui-form input[type=password],
+  .eui-form .eui-account-line {
+    height: 5rem;
+    width: 35.2rem;
+  }
+
+  /**
+   *  password input padding: #assist-btn.width + .assist-area.margin-right
+   */
+  .pass-assist {
+    padding-right: 4.7rem;
+  }
+
+  .assist-area {
+    margin: 1rem 1.7rem 1rem 0;
+  }
+
+  .eui-identity-area {
+    height: 7.4rem;
+    width: 35.2rem;
+  }
+
+  /* @todo: set the fixed size for truncating
+    */
+  .mc-st3 .eui-identity-area {
+    margin-top: 0;
+    width: auto;
+  }
+
+  .eui-mc {
+    margin-bottom: 1rem;
+  }
+
+  /*
+     * Reset the width to default behaviour as it's handled boorstrap col-xx-... defintions
+     *
+     */
+  .eui-error-area {
+    margin: 1.5rem 0 0 0;
+    width: auto;
+  }
+
+  /*
+     * circle container of the avatar
+     */
+  .eui-identity-area .eui-avatar {
+    border-radius: 50%;
+    height: 7.4rem;
+    width: 7.4rem;
+  }
+
+  /*
+     * the avatar icon
+     */
+  .eui-identity-area .eui-avatar .eui-svg {
+    height: 5.6rem;
+    margin: 0 auto;
+    width: 3.9rem;
+  }
+
+  .eui-identity-area .eui-avatar .eui-user-pic {
+    border-radius: 50%;
+    height: 7.4rem;
+    width: 7.4rem;
+  }
+
+  .eui-identity-area .eui-mc-avatar .eui-svg {
+    height: 5rem;
+    margin: 0 auto;
+    width: 3.4rem;
+  }
+
+  /**
+     * Technical error warning
+     */
+  .eui-error-area .zone-icon {
+    height: 7.4rem;
+    width: 7.4rem;
+  }
+
+  .eui-error-area .zone-icon .eui-svg {
+    height: 4.4rem;
+    margin: auto;
+    width: 4.4rem;
+  }
+
+  .eui-error-area .zone-msg {
+    padding: 0 0 0 1.5rem;
+  }
+
+  .eui-error-area .zone-msg-btm {
+    margin-top: 3rem;
+  }
+
+  .eui-error-area p {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+
+  /**
+    * End Technical error warning
+    */
+  .eui-identity-area .eui-mc-avatar .eui-user-pic {
+    border-radius: 50%;
+    height: 6.6rem;
+    width: 6.6rem;
+  }
+
+  .eui-identity-area .eui-id-login {
+    width: 26.3rem;
+  }
+
+  .mc-st3 .eui-identity-area .eui-id-login {
+    width: 23.6rem;
+  }
+
+  .eui-identity-area .eui-mc-notice {
+    margin-top: 0;
+  }
+
+  .eui-identity-area .eui-mc-lock .eui-svg {
+    height: 2.6rem;
+    margin-right: 1rem;
+    width: 1.7rem;
+  }
+
+  .mc-st3 .eui-mc-lock .eui-svg,
+  .eui-mc .eui-mc-lock .eui-svg {
+    height: 2.6rem;
+    margin-right: 1rem;
+    width: 1.7rem;
+  }
+
+  .eui-account-login {
+    width: 27.2rem;
+  }
+
+  /* the size is fixed for truncating the content with ellipsis
+    * the size is .eui-identity-area - avatar container block
+    */
+  .eui-identity {
+    width: 27.8rem;
+  }
+
+  .mc-st3 .eui-identity {
+    width: auto;
+  }
+
+  .eui-mc .eui-identity {
+    width: auto;
+  }
+
+  .eui-account-login span {
+    font-size: 1.8rem;
+    line-height: 5rem;
+  }
+
+  .eui-account-icon > .eui-svg,
+  .eui-account-action > .eui-svg {
+    height: 5rem;
+  }
+
+  /* Rester identifiÃ© chackbox */
+  .eui-checkbox {
+    margin-top: 2rem;
+  }
+
+  .eui-mc .eui-checkbox {
+    margin-top: 3rem;
+  }
+
+  .eui-label-content {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin-top: 0.4rem;
+  }
+
+  .eui-banner,
+  .eui-banner-mc {
+    background-size: 100%;
+    height: 32rem;
+    margin-top: 1rem;
+    width: 30rem;
+  }
+
+  .eui-banner-mc {
+    display: none;
+  }
+
+  #magicZone {
+    height: 32rem;
+    padding: 0;
+    width: 30rem;
+  }
+
+  .eui-links {
+    margin-bottom: 4.8rem;
+    margin-top: 3rem;
+  }
+
+  .eui-links a {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+
+  .eui-links div {
+    margin-top: 1rem;
+  }
+
+  .eui-st2 .eui-form .eui-input-label {
+    margin-top: 0;
+  }
+
+  .cn-container .eui-links {
+    padding-left: 2rem;
+  }
+
+  .eui-identity-area .eui-identity {
+    font-size: 1.8rem;
+    padding-left: 1.5rem;
+  }
+
+  .eui-links-passwd {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    left: 5.5rem;
+    letter-spacing: -0.03rem;
+    line-height: 1.8rem;
+    line-height: 5rem;
+    margin-top: 2rem;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  .eui-links-error-action {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: -0.03rem;
+    line-height: 1.8rem;
+    margin-top: 4rem;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  .eui-mc .eui-links {
+    margin-bottom: 3.5rem;
+    margin-top: 3.5rem;
+  }
+
+  .eui-mc .eui-links div {
+    margin-top: 1rem;
+  }
+
+  .mc-code-invite {
+    margin-top: 4.3rem;
+  }
+
+  .mc-code-invite .mc-logo-code {
+    height: 7.2rem;
+    margin-right: 0.9rem;
+    width: 8rem;
+  }
+
+  .mc-code-invite * {
+    font-size: 1.6rem;
+  }
+
+  .mc-code-invite p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+    margin: 0;
+  }
+
+  .mc-code-invite p span {
+    font-weight: normal;
+  }
+
+  .eui-mc-msg p {
+    font-size: 1.4rem;
+    line-height: 1rem;
+  }
+
+  .mc-st3 .eui-mc-msg p {
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1rem;
+  }
+
+  .mc-st3 .eui-id-login {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-bottom: -0.2rem;
+  }
+
+  .mc-back-head {
+    display: none;
+  }
+
+  .x-col-identity {
+    padding-left: 1.5rem;
+  }
+
+  .x-notice span.x-phone {
+    display: inline;
+  }
+
+  .eui-identity-area .x-notice {
+    font-size: 1.4rem;
+    height: 2.8rem;
+    line-height: 1.6rem;
+  }
+
+  .x-identity .x-dsn {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: -0.2rem;
+    width: 23.2rem;
+  }
+
+  /**
+     * .eui-dsn is an extension of .x-dsn
+     * No margin for IDME component!
+     */
+  .x-identity .eui-dsn {
+    margin: 0 !important;
+  }
+
+  .eui-identity-area .x-login {
+    font-size: 1.6rem;
+    height: 3.4rem;
+    width: 26.2rem;
+  }
+
+  .mc-st3 .eui-links {
+    margin-bottom: 2.6rem;
+    margin-top: 4.7rem;
+  }
+
+  .mc-st3 .eui-links > div {
+    margin-top: 1rem;
+  }
+
+  .mc-st3 .eui-links div:last-child {
+    margin-top: 3.5rem;
+  }
+
+  .mc-error-area {
+    margin-top: 4.3rem;
+  }
+
+  .mc-error-area .zone-msg {
+    padding: 0 0 0 0.9rem;
+  }
+
+  .mc-error-area .zone-msg-btm {
+    margin-top: 2.3rem;
+  }
+
+  .mc-error-area p {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+
+  .mc-error-area .eui-btn-sub {
+    margin-bottom: 0;
+    margin-top: 2.7rem;
+  }
+
+  /* overload .mc-error-area settings */
+  .mc-blocked .zone-msg-btm {
+    margin-top: 1.7rem;
+  }
+
+  .mc-blocked .eui-links-passwd {
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .eui-links-mcAuth {
+    display: none;
+  }
+
+  .pm-btn1 {
+    padding-left: 0;
+  }
+
+  .pm-btn2 {
+    margin-top: 1.7rem;
+    padding-left: 0;
+  }
+
+  .promoteMC-container .eui-links {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 978px) {
+  #passwordContainer {
+    max-width: 35.2rem;
+  }
+}
+
+/*
+(col-lg-*) Large
+*/
+
+@media (min-width: 980px) {
+  .btn {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    padding: 1.2rem 2.8rem 1.4rem 2.8rem;
+  }
+
+  .mc-action-area .eui-btn-sub {
+    padding: 0.8rem 2rem;
+  }
+
+  .eui-title-area h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0;
+    padding: 3rem 0;
+  }
+
+  .form-group.has-error .form-control-message {
+    max-width: 42.5rem;
+  }
+
+  .eui-input-label {
+    height: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1.6rem;
+    width: 42.5rem;
+  }
+
+  /* SVG icons size should be given in pixels for IE compatibility */
+  .eui-input-label .eui-icon-help {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .eui-input-label label,
+  .eui-input-label .eui-label {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    width: 100%;
+  }
+
+  #privacyPolicy {
+    margin-top: 1rem;
+  }
+
+  .eui-help {
+    width: 42.5rem;
+  }
+
+  #forceMCLabel.eui-help {
+    width: 100%;
+  }
+
+  .eui-form input[type=text],
+  .eui-form input[type=password],
+  .eui-form .eui-account-line,
+  .eui-identity-area {
+    width: 42.5rem;
+  }
+
+  /* the width is fixed for truncating the content with ellipsis */
+  .eui-identity-area .eui-identity {
+    width: 35.1rem;
+  }
+
+  .eui-identity-area .eui-id-login {
+    width: 33.6rem;
+  }
+
+  .mc-st3 .eui-identity-area .eui-id-login {
+    width: 30.9rem;
+  }
+
+  .eui-account-login {
+    width: 34.5rem;
+  }
+
+  /* Rester identifiÃ© chackbox */
+  .eui-checkbox,
+  .eui-mc .eui-checkbox {
+    margin-top: 2rem;
+  }
+
+  .eui-checkbox label {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+
+  .eui-banner,
+  .eui-banner-mc {
+    background-size: 100%;
+    height: 32rem;
+    width: 30rem;
+  }
+
+  .eui-banner-mc {
+    display: none;
+  }
+
+  #magicZone {
+    background-size: 100%;
+    float: right;
+    height: 32rem;
+    margin-top: -6rem;
+    padding: 0;
+    width: 30rem;
+  }
+
+  .eui-mc .eui-links {
+    padding: 0;
+  }
+
+  .eui-mc .eui-links > div {
+    margin-top: 1rem;
+  }
+
+  .mc-st3 .eui-links > div {
+    margin-top: 1rem;
+  }
+
+  .mc-st3 .eui-links > div:last-child {
+    margin-top: 1.4rem;
+  }
+
+  .x-identity .x-dsn {
+    width: 30rem;
+  }
+
+  .eui-identity-area .x-login {
+    width: 33.6rem;
+  }
+
+  .mc-st3 .eui-links {
+    padding: 0;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  /* override declared in media(min-width: 768px) */
+  .mc-st3 .eui-links div:last-child {
+    margin-top: 1rem;
+  }
+
+  .mc-blocked .zone-msg-btm {
+    margin-top: 1.2rem;
+  }
+
+  .eui-links-mcAuth {
+    display: inline-block;
+  }
+
+  .eui-mc-container-btn {
+    width: 50rem;
+  }
+}
+
+/*
+Large
+*/
+
+@media (min-width: 1024px) {
+  .mainCadenas {
+    height: 16.4rem;
+    width: 21.2rem;
+  }
+
+  .cn-msg {
+    font-size: 1.8rem;
+  }
+}
+
+/*
+(col-xl-*) Extra Large
+*/
+
+@media (min-width: 1220px) {
+  .eui-title-area h1 {
+    font-size: 3.4rem;
+    line-height: 3.4rem;
+    margin: 0;
+    padding: 2.8rem 0;
+  }
+
+  .mc-st3 .eui-links {
+    margin-top: 3.7rem;
+  }
+}
+
+@media (min-width: 1380px) {
+  /* Same as for Extra Large */
+  .o-container-fluid {
+    margin-left: 3.125%;
+    margin-right: 3.125%;
+  }
+}
+
+.o-container-fluid {
+  max-width: 102.4rem;
+}
+
+#discoverMCLinkImg {
+  height: 3rem;
+  margin-top: -1.75rem;
+  width: 2rem;
+}
+
+#discoverMCLinkImgHover {
+  height: 3rem;
+  margin-top: -1.75rem;
+  width: 2rem;
+}
